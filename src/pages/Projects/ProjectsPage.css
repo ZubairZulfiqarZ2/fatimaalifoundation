@@ -1,0 +1,42 @@
+/* ── Projects Page ─────────────────────────────────────────── */
+.projects-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+}
+
+.projects-page__filter {
+  padding: var(--space-xs) var(--space-lg);
+  border: 2px solid var(--color-neutral-300);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-700);
+  transition: all var(--transition-fast);
+  min-height: 40px;
+}
+
+.projects-page__filter:hover {
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+.projects-page__filter--active {
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+  color: var(--color-white);
+}
+
+.projects-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+@media (max-width: 480px) {
+  .projects-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

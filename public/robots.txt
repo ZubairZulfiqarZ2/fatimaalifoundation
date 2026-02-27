@@ -1,0 +1,14 @@
+# Fatima Ali Health Foundation — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fahfoundation.org/sitemap.xml
+
+# Crawl delay (optional, polite)
+Crawl-delay: 1
+
+# Disallow admin/internal paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/

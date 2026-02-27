@@ -1,0 +1,145 @@
+{
+  "site": {
+    "name": "Fatima Ali Health Foundation",
+    "tagline": "Nurturing Care, Changing Lives"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "events": "Events",
+    "donate": "Donate",
+    "contact": "Contact",
+    "blog": "Blog",
+    "legal": "Legal",
+    "search": "Search",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "title": "Serving Humanity Through Healthcare",
+    "founder": "Dr. Muhammad Maqsood",
+    "subtitle": "Founded by Dr. Muhammad Maqsood, the Fatima Ali Health Foundation has been dedicated to serving humanity since 2003 — organizing free medical camps, providing essential healthcare, and extending relief to those who need it most.",
+    "cta_donate": "Donate Now",
+    "cta_projects": "Our Projects"
+  },
+  "about": {
+    "title": "About Fatima Ali Health Foundation",
+    "vision_title": "Our Vision",
+    "vision_text": "To bring hope, health, and dignity to underprivileged families, ensuring access to care and compassion for those who need it most.",
+    "mission_title": "Our Mission",
+    "mission_text": "Founded by Dr. Muhammad Maqsood, the Fatima Ali Health Foundation has been dedicated to serving humanity since 2003. We organize free medical camps, provide essential healthcare services, and extend relief to flood victims by offering food, medicine, and support. Our mission is to bring hope, health, and dignity to underprivileged families, ensuring access to care and compassion for those who need it most.",
+    "founded": "Serving Humanity Since 2003",
+    "team_title": "Our Team",
+    "testimonials_title": "What People Say"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Explore the programs making a difference in communities across Pakistan.",
+    "learn_more": "Learn More",
+    "back_to_projects": "Back to Projects",
+    "related": "Related Projects",
+    "raised": "Raised",
+    "goal": "Goal",
+    "volunteers": "Volunteers",
+    "filter_all": "All Projects"
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Join us in making a difference. Browse upcoming and past events.",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "rsvp": "RSVP",
+    "details": "Event Details",
+    "date": "Date",
+    "time": "Time",
+    "location": "Location"
+  },
+  "donate": {
+    "title": "Contact & Donate",
+    "subtitle": "Your generous donation helps us provide free medical care, relief for flood victims, and community health programs. Every contribution makes a difference.",
+    "amount_label": "Select Amount",
+    "custom_amount": "Custom Amount",
+    "one_time": "One-Time",
+    "monthly": "Monthly",
+    "payment_method": "Payment Method",
+    "credit_card": "Credit Card",
+    "paypal": "PayPal",
+    "bank_transfer": "Bank Transfer",
+    "project_label": "Donate to a Project (optional)",
+    "general_fund": "General Fund",
+    "reference_label": "Reference Code (optional)",
+    "name_label": "Full Name",
+    "email_label": "Email Address",
+    "summary": "Donation Summary",
+    "confirm": "Confirm Donation",
+    "processing": "Processing...",
+    "success_title": "Thank You!",
+    "success_message": "Your donation of {amount} has been received. A confirmation email has been sent to {email}.",
+    "error_message": "Something went wrong. Please try again.",
+    "bank_title": "Bank Transfer Details",
+    "bank_name": "Bank Name: Meezan Bank",
+    "bank_account": "Account Title: Fatima Ali Health Foundation",
+    "bank_iban": "IBAN: PK00MEZN0000000000000000",
+    "bank_instructions": "Please include your name and 'FAHF Donation' as the transfer reference."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We welcome your support and inquiries. Reach out to us for any questions, volunteering opportunities, or to contribute towards our mission of serving underprivileged communities.",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Your message has been sent successfully. We'll get back to you soon!",
+    "address_title": "Our Office",
+    "address": "Fatima Ali Health Foundation, Liaqatabad, Post Office Ismail Nagar, Lahore",
+    "phone": "03366006010",
+    "email_address": "info@fahfoundation.org",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "blog": {
+    "title": "Blog & News",
+    "subtitle": "Latest updates, stories, and news from the field.",
+    "read_more": "Read More",
+    "posted_on": "Posted on",
+    "by": "by"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "connect": "Connect With Us",
+    "newsletter_title": "Stay Updated",
+    "newsletter_placeholder": "Enter your email",
+    "newsletter_cta": "Subscribe",
+    "bank_details": "Bank Details",
+    "registration": "Registered Charity — Lahore, Pakistan",
+    "copyright": "© 2026 Fatima Ali Health Foundation. All rights reserved.",
+    "designed_by": "Nurturing Care, Changing Lives"
+  },
+  "impact": {
+    "title": "Our Impact",
+    "subtitle": "Numbers that reflect our commitment to communities since 2003.",
+    "volunteers": "Volunteers",
+    "projects_completed": "Projects Completed",
+    "lives_impacted": "Lives Impacted",
+    "wells_built": "Water Plants Built"
+  },
+  "legal": {
+    "privacy_title": "Privacy Policy",
+    "terms_title": "Terms of Use",
+    "reports_title": "Financial Reports"
+  },
+  "search": {
+    "placeholder": "Search our site...",
+    "no_results": "No results found.",
+    "close": "Close search"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred.",
+    "retry": "Try Again",
+    "back": "Back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "language": "Language"
+  }
+}

@@ -1,0 +1,10 @@
+/* ── Donate Page ───────────────────────────────────────────── */
+.donate-page__security {
+  text-align: center;
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-500);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,199 @@
+/* ── Footer ────────────────────────────────────────────────── */
+.footer {
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-300);
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  padding: var(--space-4xl) 0 var(--space-3xl);
+}
+
+/* ── Brand ─────────────────────────────────────────────────── */
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.footer__logo-img {
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: var(--radius-full);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__logo-text {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body-lg);
+  color: var(--color-white);
+}
+
+.footer__about {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+/* ── Social ────────────────────────────────────────────────── */
+.footer__social {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-neutral-300);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer__social-link:hover {
+  background: var(--color-brand-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer__social-link--whatsapp:hover {
+  background: #25D366;
+}
+
+/* ── Headings & Links ──────────────────────────────────────── */
+.footer__heading {
+  color: var(--color-white);
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-md);
+}
+
+.footer__links li {
+  margin-bottom: var(--space-xs);
+}
+
+.footer__links a {
+  color: var(--color-neutral-400);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  transition: color var(--transition-fast);
+}
+
+.footer__links a:hover {
+  color: var(--color-white);
+}
+
+/* ── Bank Details ──────────────────────────────────────────── */
+.footer__bank p {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--space-xxs);
+}
+
+.footer__registration {
+  margin-top: var(--space-sm);
+  color: var(--color-neutral-500);
+  font-size: var(--font-size-xs);
+}
+
+/* ── Newsletter ────────────────────────────────────────────── */
+.footer__newsletter {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.footer__newsletter-input {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-white);
+  font-size: var(--font-size-small);
+  min-height: 44px;
+}
+
+.footer__newsletter-input::placeholder {
+  color: var(--color-neutral-500);
+}
+
+.footer__newsletter-input:focus {
+  border-color: var(--color-brand-primary);
+  outline: none;
+}
+
+.footer__newsletter-btn {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-small);
+  white-space: nowrap;
+}
+
+.footer__subscribed {
+  color: var(--color-accent-success);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ── Bottom Bar ────────────────────────────────────────────── */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-md) 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-neutral-500);
+}
+
+.footer__legal {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.footer__legal a {
+  color: var(--color-neutral-500);
+  text-decoration: none;
+}
+
+.footer__legal a:hover {
+  color: var(--color-white);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .footer__main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+
+  .footer__brand,
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__newsletter {
+    flex-direction: column;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

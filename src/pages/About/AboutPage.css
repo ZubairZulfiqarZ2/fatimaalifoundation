@@ -1,0 +1,182 @@
+/* ── About Page ────────────────────────────────────────────── */
+.about-vision__founded {
+  font-size: var(--font-size-body-lg);
+  color: #123A93;
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--space-sm);
+  letter-spacing: 0.02em;
+}
+
+.about-vision__content {
+  margin-top: var(--space-xl);
+}
+
+.about-vision__content h2 {
+  color: #123A93;
+  margin-bottom: var(--space-md);
+}
+
+.about-vision__content p {
+  font-size: var(--font-size-body-lg);
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-relaxed);
+}
+
+.about-mission__text {
+  font-size: var(--font-size-body-lg);
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-lg);
+}
+
+/* ── Credentials ──────────────────────────────────────────── */
+.about-credentials {
+  text-align: center;
+}
+
+.about-credentials__img {
+  max-width: 800px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 0 auto;
+  display: block;
+}
+
+/* ── Team Grid ─────────────────────────────────────────────── */
+.about-team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  justify-items: center;
+}
+
+.about-team__card {
+  text-align: center;
+  padding-bottom: var(--space-lg);
+  max-width: 360px;
+}
+
+.about-team__photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about-team__info {
+  padding: var(--space-lg) var(--space-md) 0;
+}
+
+.about-team__name {
+  font-size: var(--font-size-body-lg);
+  margin-bottom: var(--space-xxs);
+}
+
+.about-team__role {
+  color: #123A93;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+  margin-bottom: var(--space-sm);
+}
+
+.about-team__bio {
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-600);
+  line-height: var(--line-height-normal);
+}
+
+/* ── Office Holders ───────────────────────────────────────── */
+.about-team__office-holders {
+  margin-top: var(--space-2xl);
+  text-align: center;
+}
+
+.about-team__holders-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 0 auto;
+  display: block;
+}
+
+/* ── Photo Gallery ────────────────────────────────────────── */
+.about-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.about-gallery__item {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.about-gallery__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-gallery__img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-gallery__caption {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-600);
+  line-height: var(--line-height-normal);
+  background: var(--color-white);
+}
+
+/* ── Videos ────────────────────────────────────────────────── */
+.about-videos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--space-xl);
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-videos__item {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--color-white);
+}
+
+.about-videos__video {
+  width: 100%;
+  display: block;
+  background: var(--color-neutral-900);
+}
+
+.about-videos__caption {
+  padding: var(--space-md);
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-600);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-videos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-gallery__img {
+    height: 200px;
+  }
+}

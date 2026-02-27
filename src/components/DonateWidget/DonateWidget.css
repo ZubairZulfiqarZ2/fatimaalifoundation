@@ -1,0 +1,230 @@
+/* ── Donate Widget ─────────────────────────────────────────── */
+.donate-widget {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-xl);
+}
+
+.donate-widget__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.donate-widget__legend {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-sm);
+  color: var(--color-neutral-800);
+}
+
+/* ── Amount Buttons ────────────────────────────────────────── */
+.donate-widget__amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.donate-widget__amount-btn {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-neutral-300);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body-lg);
+  color: var(--color-neutral-800);
+  transition: all var(--transition-fast);
+  min-height: 48px;
+}
+
+.donate-widget__amount-btn:hover {
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+.donate-widget__amount-btn--active {
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+  color: var(--color-white);
+}
+
+/* ── Toggle ────────────────────────────────────────────────── */
+.donate-widget__toggle {
+  display: flex;
+  border: 2px solid var(--color-neutral-300);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.donate-widget__toggle-btn {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+  min-height: 44px;
+}
+
+.donate-widget__toggle-btn--active {
+  background: var(--color-brand-primary);
+  color: var(--color-white);
+}
+
+/* ── Payment Methods ───────────────────────────────────────── */
+.donate-widget__methods {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.donate-widget__method-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-neutral-300);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+  min-height: 44px;
+  flex: 1;
+  justify-content: center;
+}
+
+.donate-widget__method-btn:hover {
+  border-color: var(--color-brand-primary);
+}
+
+.donate-widget__method-btn--active {
+  border-color: var(--color-brand-primary);
+  background: var(--color-brand-primary-light);
+  color: var(--color-brand-primary-dark);
+}
+
+/* ── Bank Info ─────────────────────────────────────────────── */
+.donate-widget__bank-info {
+  background: var(--color-neutral-100);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  border-left: 4px solid var(--color-brand-primary);
+}
+
+[dir="rtl"] .donate-widget__bank-info {
+  border-left: none;
+  border-right: 4px solid var(--color-brand-primary);
+}
+
+.donate-widget__bank-info h4 {
+  margin-bottom: var(--space-sm);
+}
+
+.donate-widget__bank-info p {
+  margin-bottom: var(--space-xxs);
+  font-size: var(--font-size-small);
+}
+
+/* ── Submit ────────────────────────────────────────────────── */
+.donate-widget__submit {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.donate-widget__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Summary ───────────────────────────────────────────────── */
+.donate-widget__summary h3 {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.donate-widget__summary-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.donate-widget__summary-list dt {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-600);
+}
+
+.donate-widget__summary-list dd {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-900);
+}
+
+.donate-widget__summary-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+/* ── Processing ────────────────────────────────────────────── */
+.donate-widget__processing {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.donate-widget__spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--color-neutral-200);
+  border-top-color: var(--color-brand-primary);
+  border-radius: var(--radius-full);
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto var(--space-lg);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Result ────────────────────────────────────────────────── */
+.donate-widget__result {
+  text-align: center;
+  padding: var(--space-2xl) 0;
+}
+
+.donate-widget__result-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.donate-widget__result h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.donate-widget__result p {
+  color: var(--color-neutral-600);
+  margin-bottom: var(--space-xl);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .donate-widget {
+    padding: var(--space-lg);
+  }
+
+  .donate-widget__amounts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .donate-widget__methods {
+    flex-direction: column;
+  }
+
+  .donate-widget__summary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-widget__summary-actions {
+    flex-direction: column;
+  }
+}

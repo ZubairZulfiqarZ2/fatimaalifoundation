@@ -1,0 +1,41 @@
+/* ── Home Page ─────────────────────────────────────────────── */
+.home-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.home-mission {
+  background: var(--color-neutral-50);
+}
+
+.home-mission__text {
+  font-size: var(--font-size-body-lg);
+  color: var(--color-neutral-700);
+  max-width: 600px;
+  margin: var(--space-md) auto var(--space-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.home-donate-cta {
+  background: linear-gradient(135deg, #123A93 0%, #0e2e75 100%);
+  color: var(--color-white);
+}
+
+.home-donate-cta__title {
+  color: var(--color-white);
+  margin-bottom: var(--space-xl);
+  font-size: var(--font-size-h3);
+}
+
+.home-donate-cta .btn--donate {
+  background: var(--color-white);
+  color: #123A93;
+  font-size: var(--font-size-body-lg);
+}
+
+.home-donate-cta .btn--donate:hover {
+  background: #ffd700;
+  color: #0e2e75;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}

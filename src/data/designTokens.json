@@ -1,0 +1,89 @@
+{
+  "colors": {
+    "brand-primary": "#2196F3",
+    "brand-primary-dark": "#1565C0",
+    "brand-primary-light": "#BBDEFB",
+    "brand-secondary": "#4CAF50",
+    "brand-secondary-dark": "#2E7D32",
+    "brand-accent": "#FF9800",
+    "neutral-900": "#212121",
+    "neutral-800": "#424242",
+    "neutral-700": "#616161",
+    "neutral-600": "#757575",
+    "neutral-500": "#9E9E9E",
+    "neutral-400": "#BDBDBD",
+    "neutral-300": "#E0E0E0",
+    "neutral-200": "#EEEEEE",
+    "neutral-100": "#F5F5F5",
+    "neutral-50": "#FAFAFA",
+    "white": "#FFFFFF",
+    "accent-warning": "#FFC107",
+    "accent-danger": "#F44336",
+    "accent-success": "#4CAF50",
+    "accent-info": "#03A9F4",
+    "overlay-dark": "rgba(0, 0, 0, 0.55)",
+    "overlay-light": "rgba(255, 255, 255, 0.85)"
+  },
+  "typography": {
+    "font-family-primary": "\"Nunito\", \"Helvetica Neue\", Arial, sans-serif",
+    "font-family-heading": "\"Nunito\", \"Helvetica Neue\", Arial, sans-serif",
+    "font-family-urdu": "\"Noto Nastaliq Urdu\", \"Jameel Noori Nastaleeq\", serif",
+    "scale": {
+      "h1": "2.5rem",
+      "h2": "2rem",
+      "h3": "1.75rem",
+      "h4": "1.5rem",
+      "body-lg": "1.125rem",
+      "body": "1rem",
+      "small": "0.875rem",
+      "xs": "0.75rem"
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 600,
+      "bold": 700,
+      "extra-bold": 800
+    },
+    "line-height": {
+      "tight": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.75
+    }
+  },
+  "spacing": {
+    "xxs": "0.25rem",
+    "xs": "0.5rem",
+    "sm": "0.75rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "3rem",
+    "3xl": "4rem",
+    "4xl": "6rem"
+  },
+  "radii": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "16px",
+    "xl": "24px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "sm": "0 1px 3px rgba(0, 0, 0, 0.12)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.1)",
+    "lg": "0 10px 25px rgba(0, 0, 0, 0.15)",
+    "xl": "0 20px 50px rgba(0, 0, 0, 0.2)"
+  },
+  "transitions": {
+    "fast": "150ms ease",
+    "normal": "300ms ease",
+    "slow": "500ms ease-out"
+  },
+  "breakpoints": {
+    "xs": "320px",
+    "sm": "480px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1440px"
+  }
+}
