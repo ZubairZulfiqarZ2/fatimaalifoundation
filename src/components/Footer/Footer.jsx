@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
-import { FaFacebookF, FaInstagram, FaYoutube, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter, FaTiktok } from 'react-icons/fa6';
 import logoImg from '../../assets/images/new/logo_fatima_ali_foundation.png';
 import './Footer.css';
 
@@ -34,17 +34,17 @@ export default function Footer() {
           </div>
           <p className="footer__about">{t('site.tagline')}</p>
           <nav className="footer__social" aria-label="Social media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61588570877535" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
               <FaFacebookF aria-hidden="true" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/fatima_health_foundation/" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Instagram">
               <FaInstagram aria-hidden="true" />
             </a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="X (Twitter)">
+            <a href="https://x.com/fatimalihealth" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="X (Twitter)">
               <FaXTwitter aria-hidden="true" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="YouTube">
-              <FaYoutube aria-hidden="true" />
+            <a href="https://www.tiktok.com/@fatimaalihealth" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="TikTok">
+              <FaTiktok aria-hidden="true" />
             </a>
             <a href="https://wa.me/923366006010" target="_blank" rel="noopener noreferrer" className="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp">
               <FaWhatsapp aria-hidden="true" />

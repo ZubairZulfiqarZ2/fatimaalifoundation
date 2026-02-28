@@ -3,7 +3,7 @@ import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter, FaTiktok } from 'react-icons/fa6';
 import './ContactPage.css';
 
 export default function ContactPage() {
@@ -98,14 +98,17 @@ export default function ContactPage() {
 
                 <h4>Follow Us</h4>
                 <div className="contact-page__social">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="contact-page__social-link">
+                  <a href="https://www.facebook.com/profile.php?id=61588570877535" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="contact-page__social-link">
                     <FaFacebookF aria-hidden="true" />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="contact-page__social-link">
+                  <a href="https://www.instagram.com/fatima_health_foundation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="contact-page__social-link">
                     <FaInstagram aria-hidden="true" />
                   </a>
-                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="contact-page__social-link">
+                  <a href="https://x.com/fatimalihealth" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="contact-page__social-link">
                     <FaXTwitter aria-hidden="true" />
+                  </a>
+                  <a href="https://www.tiktok.com/@fatimaalihealth" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="contact-page__social-link">
+                    <FaTiktok aria-hidden="true" />
                   </a>
                 </div>
               </div>

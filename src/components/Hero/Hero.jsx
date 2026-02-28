@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter, FaTiktok } from 'react-icons/fa6';
 import heroBg from '../../assets/images/WhatsApp Image 2026-02-24 at 15.24.21.jpeg';
 import './Hero.css';
 
@@ -75,7 +75,7 @@ export default function Hero() {
 
       <nav className="hero__social" aria-label="Social media links">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/profile.php?id=61588570877535"
           target="_blank"
           rel="noopener noreferrer"
           className="hero__social-link"
@@ -84,7 +84,7 @@ export default function Hero() {
           <FaFacebookF aria-hidden="true" />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/fatima_health_foundation/"
           target="_blank"
           rel="noopener noreferrer"
           className="hero__social-link"
@@ -93,13 +93,22 @@ export default function Hero() {
           <FaInstagram aria-hidden="true" />
         </a>
         <a
-          href="https://x.com"
+          href="https://x.com/fatimalihealth"
           target="_blank"
           rel="noopener noreferrer"
           className="hero__social-link"
           aria-label="X (Twitter)"
         >
           <FaXTwitter aria-hidden="true" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@fatimaalihealth"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero__social-link"
+          aria-label="TikTok"
+        >
+          <FaTiktok aria-hidden="true" />
         </a>
       </nav>
     </section>
