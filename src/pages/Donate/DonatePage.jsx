@@ -1,6 +1,7 @@
 import { useLanguage } from '../../context/LanguageContext';
 import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import officialBannerImg from '../../assets/images/84x33 star file.jpg';
 import './DonatePage.css';
 
 export default function DonatePage() {
@@ -45,6 +46,16 @@ export default function DonatePage() {
             <h1 className="section-heading__title">{t('donate.title')}</h1>
             <p className="section-heading__subtitle">Bank Details</p>
             <div className="section-heading__bar" />
+          </div>
+
+          {/* Official Credentials */}
+          <div className="donate-page__credentials">
+            <img
+              src={officialBannerImg}
+              alt="Fatima Ali Health Foundation — Registered with Punjab Charity Commission, PHC, FBR, and Registrar Joint Stock Companies Lahore"
+              className="donate-page__credentials-img"
+              loading="lazy"
+            />
           </div>
 
           <div className="donate-page__bank card">

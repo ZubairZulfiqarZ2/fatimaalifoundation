@@ -6,6 +6,7 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import ImpactStats from '../../components/ImpactStats/ImpactStats';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import projects from '../../data/projects';
+import officialBannerImg from '../../assets/images/84x33 star file.jpg';
 import './HomePage.css';
 
 export default function HomePage() {
@@ -73,6 +74,20 @@ export default function HomePage() {
       </section>
 
       <Testimonials />
+
+      {/* Official Credentials Banner */}
+      <section className="section home-credentials" aria-label="Official registration and credentials">
+        <div className="container text-center">
+          <h2 className="section-heading__title">Registered & Government Certified</h2>
+          <div className="section-heading__bar" />
+          <img
+            src={officialBannerImg}
+            alt="Fatima Ali Health Foundation — Registered with Punjab Charity Commission, Punjab Healthcare Commission (PHC), Federal Board of Revenue (FBR), and Registrar Joint Stock Companies Lahore. CEO: Dr. Muhammad Maqsood."
+            className="home-credentials__img"
+            loading="lazy"
+          />
+        </div>
+      </section>
 
       {/* Donate CTA Strip */}
       <section className="home-donate-cta section" aria-label="Donate call to action">

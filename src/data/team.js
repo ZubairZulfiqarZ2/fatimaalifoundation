@@ -33,11 +33,11 @@ const team = [
   },
   {
     id: 'social-media-secretary',
-    name: 'Zubair Zulifqar',
-    nameUrdu: 'زبیر ذوالفقار',
+    name: 'Muhammad Salman Arif',
+    nameUrdu: 'محمد سلمان عارف',
     role: 'Social Media Secretary',
     roleUrdu: 'سوشل میڈیا سیکرٹری',
-    bio: 'As Social Media Secretary, he drives our digital presence, manages community outreach through social platforms, and ensures the foundation\'s mission and impact stories reach a broader audience across Pakistan and beyond.',
+    bio: 'As Social Media Secretary, Muhammad Salman Arif drives our digital presence, manages community outreach through social platforms, and ensures the foundation\'s mission and impact stories reach a broader audience across Pakistan and beyond.',
     image: socialSecImg,
   },
 ];

@@ -14,7 +14,7 @@ import ladyDoctorsImg from '../../assets/images/WhatsApp Image 2026-02-24 at 15.
 import waterPlantImg from '../../assets/images/WhatsApp Image 2026-02-24 at 16.00.26.jpeg';
 import floodReliefImg from '../../assets/images/WhatsApp Image 2026-02-24 at 16.00.26 (1).jpeg';
 import drMaqsoodClinicImg from '../../assets/images/WhatsApp Image 2026-02-24 at 15.24.17.jpeg';
-import registrationImg from '../../assets/images/WhatsApp Image 2026-02-24 at 15.24.20.jpeg';
+import officialBannerImg from '../../assets/images/84x33 star file.jpg';
 
 // Import new gallery images
 import motherChildClinic from '../../assets/images/new/WhatsApp Image 2026-02-28 at 16.05.32.jpeg';
@@ -102,13 +102,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Registration & Credentials */}
+      {/* Official Credentials Banner */}
       <section className="section about-credentials">
         <div className="container text-center">
+          <h2 className="section-heading__title">Official Registration & Credentials</h2>
+          <div className="section-heading__bar" />
           <img
-            src={registrationImg}
-            alt="Fatima Ali Health Foundation official registration and credentials — Punjab Healthcare Commission, FBR registered"
-            className="about-credentials__img"
+            src={officialBannerImg}
+            alt="Fatima Ali Health Foundation — Official credentials banner showing Punjab Charity Commission (REG NO 12033-1484162-1256), Punjab Healthcare Commission PHC (REG.NO 84783), FBR Pakistan (REG.NO D-826348), Registrar Joint Stock Companies Lahore (REG NO RP/907-L/SO3). CEO: Dr. Muhammad Maqsood."
+            className="about-credentials__img about-credentials__img--banner"
             loading="lazy"
           />
         </div>

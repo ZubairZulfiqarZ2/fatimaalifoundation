@@ -43,6 +43,18 @@
   display: block;
 }
 
+.about-credentials__img--banner {
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-xl);
+  border: 3px solid var(--color-neutral-200);
+}
+
+.about-credentials__img + .about-credentials__img {
+  margin-top: var(--space-xl);
+}
+
 /* ── Team Grid ─────────────────────────────────────────────── */
 .about-team__grid {
   display: grid;
