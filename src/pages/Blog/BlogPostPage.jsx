@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
+import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import blogPosts from '../../data/blogPosts';
 import './BlogPostPage.css';
@@ -21,14 +21,52 @@ export default function BlogPostPage() {
 
   const title = language === 'ur' ? post.titleUrdu : post.title;
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': post.title,
+    'description': post.excerpt,
+    'image': post.image,
+    'datePublished': post.date,
+    'author': {
+      '@type': 'Person',
+      'name': post.author,
+    },
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Fatima Ali Health Foundation',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://fahfoundation.org/assets/images/new/logo_fatima_ali_foundation.png',
+      },
+    },
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': `https://fahfoundation.org/blog/${slug}`,
+    },
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{post.title} — {t('site.name')}</title>
-        <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
-      </Helmet>
+      <SEOHead
+        title={post.title}
+        description={post.excerpt}
+        path={`/blog/${slug}`}
+        image={post.image}
+        type="article"
+        jsonLd={[
+          articleLd,
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://fahfoundation.org/' },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://fahfoundation.org/blog' },
+              { '@type': 'ListItem', 'position': 3, 'name': post.title, 'item': `https://fahfoundation.org/blog/${slug}` },
+            ],
+          },
+        ]}
+      />
 
       <Breadcrumbs
         items={[

@@ -1,8 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import SEOHead from '../../components/SEO/SEOHead';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import projects from '../../data/projects';
 import './ProjectDetailPage.css';
@@ -23,17 +23,61 @@ export default function ProjectDetailPage() {
   }
 
   const title = language === 'ur' ? project.titleUrdu : project.title;
+  const summary = language === 'ur' ? project.summaryUrdu : project.summary;
   const progress = Math.round((project.currentAmount / project.targetAmount) * 100);
   const related = projects.filter((p) => project.relatedProjects.includes(p.slug));
 
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Project",
+    "name": title,
+    "description": project.description,
+    "url": `https://fahfoundation.org/projects/${project.slug}`,
+    "image": project.image,
+    "location": {
+      "@type": "Place",
+      "name": project.location,
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PK"
+      }
+    },
+    "funding": {
+      "@type": "MonetaryGrant",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": project.targetAmount
+      },
+      "funder": {
+        "@type": "Organization",
+        "name": t('site.name'),
+        "url": "https://fahfoundation.org/"
+      }
+    },
+    "potentialAction": {
+      "@type": "DonateAction",
+      "name": `Donate to ${project.title}`,
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `https://fahfoundation.org/donate?project=${project.id}`
+      }
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://fahfoundation.org/#website"
+    }
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{project.title} — {t('site.name')}</title>
-        <meta name="description" content={project.summary} />
-        <meta property="og:title" content={project.title} />
-        <meta property="og:description" content={project.summary} />
-      </Helmet>
+      <SEOHead
+        title={title}
+        description={summary}
+        path={`/projects/${project.slug}`}
+        image={typeof project.image === 'string' ? project.image : undefined}
+        jsonLd={projectJsonLd}
+      />
 
       <Breadcrumbs
         items={[

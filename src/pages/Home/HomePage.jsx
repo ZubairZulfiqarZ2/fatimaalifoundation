@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
+import SEOHead from '../../components/SEO/SEOHead';
 import Hero from '../../components/Hero/Hero';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import ImpactStats from '../../components/ImpactStats/ImpactStats';
@@ -12,15 +12,27 @@ export default function HomePage() {
   const { t } = useLanguage();
   const featuredProjects = projects.slice(0, 4);
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      {
+        '@type': 'ListItem',
+        'position': 1,
+        'name': 'Home',
+        'item': 'https://fahfoundation.org/',
+      },
+    ],
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{t('site.name')} — {t('site.tagline')}</title>
-        <meta name="description" content="Founded by Dr. Muhammad Maqsood, the Fatima Ali Health Foundation has been serving humanity since 2003 through free medical camps, healthcare services, and flood relief." />
-        <meta property="og:title" content={`${t('site.name')} — ${t('site.tagline')}`} />
-        <meta property="og:description" content="Nurturing Care, Changing Lives — serving humanity through healthcare since 2003." />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <SEOHead
+        title={null}
+        description="Founded by Dr. Muhammad Maqsood, the Fatima Ali Health Foundation has been serving humanity since 2003 through free medical camps, healthcare services, and flood relief across Pakistan."
+        path="/"
+        jsonLd={breadcrumbLd}
+      />
 
       <Hero />
 

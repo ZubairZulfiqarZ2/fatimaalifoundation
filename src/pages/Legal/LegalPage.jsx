@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import SEOHead from '../../components/SEO/SEOHead';
 import './LegalPage.css';
 
 const legalContent = {
@@ -57,11 +57,26 @@ export default function LegalPage() {
   const content = legalContent[page] || legalContent.privacy;
   const pageTitle = content.title;
 
+  const legalJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "url": `https://fahfoundation.org/legal/${page}`,
+    "publisher": {
+      "@type": "Organization",
+      "name": t('site.name'),
+      "url": "https://fahfoundation.org/"
+    }
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} — {t('site.name')}</title>
-      </Helmet>
+      <SEOHead
+        title={pageTitle}
+        description={`${pageTitle} — Fatima Ali Health Foundation`}
+        path={`/legal/${page}`}
+        jsonLd={legalJsonLd}
+      />
 
       <Breadcrumbs
         items={[

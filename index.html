@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#123A93" />
     <meta name="description" content="Fatima Ali Health Foundation — Founded by Dr. Muhammad Maqsood, serving humanity through healthcare since 2003. Free medical camps, flood relief, and community health programs across Pakistan." />
     <meta name="author" content="Fatima Ali Health Foundation" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://fahfoundation.org/" />
+
+    <!-- Hreflang: English + Urdu -->
+    <link rel="alternate" hreflang="en" href="https://fahfoundation.org/" />
+    <link rel="alternate" hreflang="ur" href="https://fahfoundation.org/?lang=ur" />
+    <link rel="alternate" hreflang="x-default" href="https://fahfoundation.org/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -29,7 +36,7 @@
     <meta name="twitter:description" content="Founded by Dr. Muhammad Maqsood — Serving Humanity Through Healthcare since 2003" />
     <meta name="twitter:image" content="https://fahfoundation.org/assets/images/WhatsApp%20Image%202026-02-24%20at%2015.24.21.jpeg" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data: Organization -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -37,7 +44,8 @@
         "name": "Fatima Ali Health Foundation",
         "alternateName": "FAHF",
         "url": "https://fahfoundation.org",
-        "logo": "https://fahfoundation.org/assets/images/Gemini_Generated_Image_m456wlm456wlm456.png",
+        "logo": "https://fahfoundation.org/assets/images/new/logo_fatima_ali_foundation.png",
+        "image": "https://fahfoundation.org/assets/images/WhatsApp%20Image%202026-02-24%20at%2015.24.21.jpeg",
         "foundingDate": "2003",
         "founder": {
           "@type": "Person",
@@ -55,14 +63,36 @@
           "@type": "ContactPoint",
           "telephone": "+92-336-6006010",
           "contactType": "customer service",
-          "email": "info@fahfoundation.org"
+          "email": "info@fahfoundation.org",
+          "availableLanguage": ["English", "Urdu"]
         },
         "sameAs": [
           "https://facebook.com",
           "https://instagram.com",
           "https://x.com",
           "https://wa.me/923366006010"
-        ]
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Pakistan"
+        },
+        "knowsLanguage": ["en", "ur"]
+      }
+    </script>
+
+    <!-- Structured Data: WebSite with SearchAction -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Fatima Ali Health Foundation",
+        "url": "https://fahfoundation.org",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://fahfoundation.org/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": ["en", "ur"]
       }
     </script>
 

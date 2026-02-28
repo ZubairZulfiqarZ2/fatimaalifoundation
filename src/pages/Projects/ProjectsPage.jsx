@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import SEOHead from '../../components/SEO/SEOHead';
 import projects, { projectCategories } from '../../data/projects';
 import './ProjectsPage.css';
 
@@ -18,12 +18,38 @@ export default function ProjectsPage() {
   const visible = filtered.slice(0, visibleCount);
   const hasMore = visible.length < filtered.length;
 
+  const projectsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": t('projects.title'),
+    "description": t('projects.subtitle'),
+    "url": "https://fahfoundation.org/projects",
+    "publisher": {
+      "@type": "Organization",
+      "name": t('site.name'),
+      "url": "https://fahfoundation.org/",
+      "logo": "https://fahfoundation.org/assets/logo_fatima_ali_foundation-Bb2v1ZVI.png"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": projects.map((project, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://fahfoundation.org/projects/${project.slug}`,
+        "name": language === 'ur' ? project.titleUrdu : project.title,
+        "description": language === 'ur' ? project.summaryUrdu : project.summary
+      }))
+    }
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{t('projects.title')} — {t('site.name')}</title>
-        <meta name="description" content="Explore our projects: Orphanages, Flood Relief, Food Distribution, Water Filtration, and more." />
-      </Helmet>
+      <SEOHead
+        title={t('projects.title')}
+        description={t('projects.subtitle')}
+        path="/projects"
+        jsonLd={projectsJsonLd}
+      />
 
       <Breadcrumbs items={[{ label: t('projects.title'), path: '/projects' }]} />
 

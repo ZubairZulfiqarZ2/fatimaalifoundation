@@ -1,7 +1,7 @@
 const testimonials = [
   {
     id: 1,
-    quote: 'Dr. Maqsood and his team personally treated my entire family at the free medical camp. We had no money for medicines — the foundation provided everything. May Allah bless them.',
+    quote: 'Dr. Muhammad Maqsood and his team personally treated my entire family at the free medical camp. We had no money for medicines — the foundation provided everything. May Allah bless them.',
     quoteUrdu: 'ڈاکٹر مقصود اور ان کی ٹیم نے مفت طبی کیمپ میں میرے پورے خاندان کا علاج کیا۔ ہمارے پاس دوائیوں کے پیسے نہیں تھے — فاؤنڈیشن نے سب کچھ فراہم کیا۔',
     author: 'Amna Bibi',
     authorUrdu: 'آمنہ بی بی',

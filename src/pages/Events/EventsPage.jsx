@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
+import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { FaCalendar, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
@@ -19,10 +19,39 @@ export default function EventsPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{t('events.title')} — {t('site.name')}</title>
-        <meta name="description" content="Browse upcoming and past events from Fatima Ali Health Foundation." />
-      </Helmet>
+      <SEOHead
+        title={t('events.title')}
+        description="Browse upcoming and past events from Fatima Ali Health Foundation — free medical camps, blood donation drives, food distribution, community health programs in Pakistan."
+        path="/events"
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://fahfoundation.org/' },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Events', 'item': 'https://fahfoundation.org/events' },
+            ],
+          },
+          ...events.slice(0, 5).map((ev) => ({
+            '@context': 'https://schema.org',
+            '@type': 'Event',
+            'name': ev.title,
+            'startDate': ev.date,
+            'location': {
+              '@type': 'Place',
+              'name': ev.location,
+              'address': { '@type': 'PostalAddress', 'addressCountry': 'PK' },
+            },
+            'description': ev.description,
+            'organizer': {
+              '@type': 'Organization',
+              'name': 'Fatima Ali Health Foundation',
+              'url': 'https://fahfoundation.org',
+            },
+            'image': ev.image,
+          })),
+        ]}
+      />
 
       <Breadcrumbs items={[{ label: t('events.title'), path: '/events' }]} />
 

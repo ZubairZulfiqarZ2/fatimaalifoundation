@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
+import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import blogPosts from '../../data/blogPosts';
@@ -12,10 +12,19 @@ export default function BlogPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{t('blog.title')} — {t('site.name')}</title>
-        <meta name="description" content="Latest news, updates, and stories from Fatima Ali Health Foundation." />
-      </Helmet>
+      <SEOHead
+        title={t('blog.title')}
+        description="Latest news, updates, and stories from Fatima Ali Health Foundation — medical camp reports, flood relief updates, community health stories from Pakistan."
+        path="/blog"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          'itemListElement': [
+            { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://fahfoundation.org/' },
+            { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://fahfoundation.org/blog' },
+          ],
+        }}
+      />
 
       <Breadcrumbs items={[{ label: t('blog.title'), path: '/blog' }]} />
 

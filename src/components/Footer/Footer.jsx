@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { FaFacebookF, FaInstagram, FaYoutube, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import logoImg from '../../assets/images/Gemini_Generated_Image_m456wlm456wlm456.png';
+import logoImg from '../../assets/images/new/logo_fatima_ali_foundation.png';
 import './Footer.css';
 
 export default function Footer() {

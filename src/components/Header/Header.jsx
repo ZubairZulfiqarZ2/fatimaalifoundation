@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
-import logoImg from '../../assets/images/Gemini_Generated_Image_m456wlm456wlm456.png';
+import logoImg from '../../assets/images/new/logo_fatima_ali_foundation.png';
 import './Header.css';
 
 const navItems = [

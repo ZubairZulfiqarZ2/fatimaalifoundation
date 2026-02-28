@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
+import SEOHead from '../../components/SEO/SEOHead';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
@@ -9,12 +9,46 @@ import './ContactPage.css';
 export default function ContactPage() {
   const { t } = useLanguage();
 
+  const localBusinessLd = {
+    '@context': 'https://schema.org',
+    '@type': 'NGO',
+    'name': 'Fatima Ali Health Foundation',
+    'url': 'https://fahfoundation.org',
+    'telephone': '+92-336-6006010',
+    'email': 'info@fahfoundation.org',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Liaqatabad, Post Office Ismail Nagar',
+      'addressLocality': 'Lahore',
+      'addressRegion': 'Punjab',
+      'addressCountry': 'PK',
+    },
+    'contactPoint': {
+      '@type': 'ContactPoint',
+      'telephone': '+92-336-6006010',
+      'contactType': 'customer service',
+      'availableLanguage': ['English', 'Urdu'],
+    },
+  };
+
   return (
     <>
-      <Helmet>
-        <title>{t('contact.title')} — {t('site.name')}</title>
-        <meta name="description" content="Get in touch with Fatima Ali Health Foundation for questions, volunteering opportunities, or to contribute towards our mission." />
-      </Helmet>
+      <SEOHead
+        title={t('contact.title')}
+        description="Contact Fatima Ali Health Foundation — reach out for questions, volunteering opportunities, or to donate. Phone: 03366006010. Liaqatabad, Lahore, Pakistan."
+        path="/contact"
+        jsonLd={[
+          localBusinessLd,
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://fahfoundation.org/' },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': 'https://fahfoundation.org/contact' },
+            ],
+          },
+        ]}
+      />
 
       <Breadcrumbs items={[{ label: t('contact.title'), path: '/contact' }]} />
 

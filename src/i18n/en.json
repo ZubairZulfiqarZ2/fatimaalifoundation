@@ -77,9 +77,9 @@
     "success_message": "Your donation of {amount} has been received. A confirmation email has been sent to {email}.",
     "error_message": "Something went wrong. Please try again.",
     "bank_title": "Bank Transfer Details",
-    "bank_name": "Bank Name: Meezan Bank",
-    "bank_account": "Account Title: Fatima Ali Health Foundation",
-    "bank_iban": "IBAN: PK00MEZN0000000000000000",
+    "bank_name": "Meezan Bank — Model Town C-Block, Lahore",
+    "bank_account": "Account No: 02870110584994",
+    "bank_iban": "IBAN: PK96MEZN0002870110584994",
     "bank_instructions": "Please include your name and 'FAHF Donation' as the transfer reference."
   },
   "contact": {
