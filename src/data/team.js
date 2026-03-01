@@ -2,6 +2,7 @@ import drMaqsoodImg from '../assets/images/WhatsApp Image 2026-02-24 at 15.24.16
 import vpImg from '../assets/images/WhatsApp Image 2026-02-28 at 16.09.30.jpeg';
 import genSecImg from '../assets/images/WhatsApp Image 2026-02-28 at 18.39.25.jpeg';
 import socialSecImg from '../assets/images/WhatsApp Image 2026-02-28 at 16.10.16.jpeg';
+import womenPlaceholderImg from '../assets/images/new/muslim-hijab-girl-silhouette-vector-illustration_949970-458.avif';
 
 const team = [
   {
@@ -39,6 +40,33 @@ const team = [
     roleUrdu: 'سوشل میڈیا سیکرٹری',
     bio: 'As Social Media Secretary, Muhammad Salman Arif drives our digital presence, manages community outreach through social platforms, and ensures the foundation\'s mission and impact stories reach a broader audience across Pakistan and beyond.',
     image: socialSecImg,
+  },
+  {
+    id: 'joint-secretary',
+    name: 'Ghulam Razia W/O M. Arif Shahid',
+    nameUrdu: 'غلام رضیہ زوجہ ایم عارف شاہد',
+    role: 'Joint Secretary',
+    roleUrdu: 'جوائنٹ سیکرٹری',
+    bio: 'As Joint Secretary, she supports strategic coordination and day-to-day administration, helping ensure smooth planning and execution of foundation activities.',
+    image: womenPlaceholderImg,
+  },
+  {
+    id: 'finance-secretary',
+    name: 'Humaira Jabeen W/O M. Maqsood',
+    nameUrdu: 'حمیرہ جبین زوجہ ایم مقصود',
+    role: 'Finance Secretary',
+    roleUrdu: 'فنانس سیکرٹری',
+    bio: 'As Finance Secretary, she assists with financial oversight, transparent record-keeping, and responsible allocation of donor funds across programs.',
+    image: womenPlaceholderImg,
+  },
+  {
+    id: 'office-secretary',
+    name: 'Musarrat D/O Mehar Ali Muhammad',
+    nameUrdu: 'مسرت دختر مہر علی محمد',
+    role: 'Office Secretary',
+    roleUrdu: 'آفس سیکرٹری',
+    bio: 'As Office Secretary, she manages correspondence, documentation, and office operations to keep communication and workflows organized.',
+    image: womenPlaceholderImg,
   },
 ];
 
