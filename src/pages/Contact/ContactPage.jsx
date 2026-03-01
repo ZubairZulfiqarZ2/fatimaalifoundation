@@ -87,7 +87,7 @@ export default function ContactPage() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/923366006010"
+                  href="https://wa.me/923204028874"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn--whatsapp contact-page__whatsapp"

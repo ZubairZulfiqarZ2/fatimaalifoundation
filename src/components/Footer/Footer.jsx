@@ -46,7 +46,7 @@ export default function Footer() {
             <a href="https://www.tiktok.com/@fatimaalihealth" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="TikTok">
               <FaTiktok aria-hidden="true" />
             </a>
-            <a href="https://wa.me/923366006010" target="_blank" rel="noopener noreferrer" className="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp">
+            <a href="https://wa.me/923204028874" target="_blank" rel="noopener noreferrer" className="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp">
               <FaWhatsapp aria-hidden="true" />
             </a>
           </nav>
