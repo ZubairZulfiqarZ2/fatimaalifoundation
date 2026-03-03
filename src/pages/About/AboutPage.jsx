@@ -50,7 +50,7 @@ export default function AboutPage() {
   const { t, language } = useLanguage();
   const [visionRef, visionVisible] = useScrollAnimation();
   const [missionRef, missionVisible] = useScrollAnimation();
-  const [teamRef, teamVisible] = useScrollAnimation();
+  const [teamRef, teamVisible] = useScrollAnimation(0);
   const [galleryRef, galleryVisible] = useScrollAnimation();
   const [videoRef, videoVisible] = useScrollAnimation();
 

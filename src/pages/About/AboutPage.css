@@ -193,6 +193,19 @@
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 768px) {
+  .about-team__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .about-team__card {
+    width: min(100%, 420px);
+  }
+
+  .about-team__photo {
+    max-height: 340px;
+  }
+
   .about-gallery__grid {
     grid-template-columns: 1fr;
   }
