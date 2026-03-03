@@ -96,6 +96,19 @@
   font-size: var(--font-size-small);
   color: var(--color-neutral-600);
   line-height: var(--line-height-normal);
+  margin-bottom: var(--space-sm);
+}
+
+.about-team__meta {
+  font-size: var(--font-size-small);
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-xxs);
+  text-align: left;
+}
+
+.about-team__meta strong {
+  color: #123A93;
 }
 
 /* ── Office Holders ───────────────────────────────────────── */

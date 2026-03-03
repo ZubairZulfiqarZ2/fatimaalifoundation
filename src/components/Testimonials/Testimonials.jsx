@@ -52,14 +52,6 @@ export default function Testimonials() {
             <p>{quote}</p>
           </blockquote>
           <div className="testimonials__author">
-            <img
-              src={item.image}
-              alt={`Photo of ${item.author}`}
-              className="testimonials__avatar"
-              loading="lazy"
-              width="56"
-              height="56"
-            />
             <div>
               <strong className="testimonials__name">{author}</strong>
               <span className="testimonials__role">{role}</span>

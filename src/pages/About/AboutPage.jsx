@@ -148,7 +148,16 @@ export default function AboutPage() {
                   <p className="about-team__role">
                     {language === 'ur' ? member.roleUrdu : member.role}
                   </p>
-                  <p className="about-team__bio">{member.bio}</p>
+                  <p className="about-team__bio">{member.description || member.bio}</p>
+                  <p className="about-team__meta">
+                    <strong>Experience:</strong> {member.experience}
+                  </p>
+                  <p className="about-team__meta">
+                    <strong>Goal:</strong> {member.goals}
+                  </p>
+                  <p className="about-team__meta">
+                    <strong>Review:</strong> {member.review}
+                  </p>
                 </div>
               </article>
             ))}
